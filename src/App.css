@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
-}
+/*.sliderController{
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  width: 200px;
+} 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
-  flex-direction: column;
+  height: 70vh;
+  width: 100vw;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between ;
+}*/
+.sliderController {
+  width: 200px;
+  height: 8px;
+  appearance: none;
+  background: linear-gradient(to right, lightblue, darkblue);
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.sliderController::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sliderController::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;
+  height: 70vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
 }
